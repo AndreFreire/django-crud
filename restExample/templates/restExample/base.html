@@ -1,0 +1,10 @@
+<html>
+	<body>
+		<ul>
+		    <li><a href="{% url 'new_person' %}">create</a></li>
+		    <li><a href="{% url 'person_list' %}">list</a></li>		    
+		</ul>		
+		{% block content %}
+		{% endblock %}
+	</body>
+</html>

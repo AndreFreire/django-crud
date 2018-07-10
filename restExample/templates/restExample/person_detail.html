@@ -1,0 +1,10 @@
+{% extends 'restExample/base.html' %}
+
+{% block content %}
+    <div class="person">
+        <p>Id: {{ object.id }}</p>
+        <p>Name: {{ object.name }}</p>
+        <p>Last name {{ object.lastName }}</p>
+        <p>Nickname {{ object.nickname }}</p>
+    </div>
+{% endblock %}

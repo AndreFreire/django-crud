@@ -1,0 +1,12 @@
+{% extends 'restExample/base.html' %}
+
+{% block content %}
+    <div class="person">
+        {% for person in people %}
+	        <p>Name: {{ person.name }}</p>
+	        <p>Last name: {{ person.lastName }}</p>
+	        <p>Nickname: {{ person.nickname }}</p>
+	        <a href="{% url 'person_detail' person.id %}">View detail</a>
+	    {% endfor%}
+    </div>
+{% endblock %}
